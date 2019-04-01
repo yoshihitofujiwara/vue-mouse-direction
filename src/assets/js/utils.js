@@ -1,4 +1,53 @@
-// const RAD_TO_DEG = 180 / Math.PI;
+// utils.js
+// version: 0.0.5
+// author: yoshihito fujiwara
+
+
+/**
+ * lerp - 線形補間
+ *
+ * @export
+ * @param  {number} val 線形補間する指定の値
+ * @param  {number} min   最小値
+ * @param  {number} max   最大値
+ * @returns {number}       線形補間した値
+ */
+export function lerp(val, min, max) {
+	return (max - min) * val + min;
+};
+
+
+/**
+ * getMouseEventAngle - マウスイベントが起こったアングルの取得
+ *
+ * @param {Object} event - マウスイベントデータ
+ */
+export function getMouseEventAngle(event) {
+	let cx = event.srcElement.offsetWidth * 0.5;
+	let cy = event.srcElement.offsetHeight * 0.5;
+	let rad = Math.atan2(cy - event.offsetY, event.offsetX - cx);
+	return rad;
+}
+
+
+/**
+ * getNormalizeOffset - 正規化した座標を返す (-1 to +1)
+ *
+ * @param {Object} event - マウスイベントデータ
+ */
+export function getNormalizeOffset(event) {
+	let cx = event.srcElement.offsetWidth * 0.5;
+  let cy = event.srcElement.offsetHeight * 0.5;
+	let y = cy - event.offsetY;
+	let x = event.offsetX - cx;
+
+	return {
+    x: x / cx,
+		y: y / cy
+  };
+}
+
+
 
 
 /**

@@ -1,5 +1,13 @@
 # vue-mouse-direction
 
+## DEMO
+<ul>
+	<li><a href="https://yoshihitofujiwara.github.io/vue-mouse-direction/#/slide-button-list" target="_blank">Slide Button</a></li>
+	<li><a href="https://yoshihitofujiwara.github.io/vue-mouse-direction/#/3d-float-button" target="_blank">3D Float Button</a></li>
+</ul>
+
+
+
 > A Vue.js project
 
 ## Build Setup
@@ -25,14 +33,7 @@ npm run e2e
 
 # run all tests
 npm test
-```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-
-
-======
-```
 # SCSSを有効化
 npm install sass-loader node-sass --save-dev
 
@@ -41,7 +42,4 @@ npm install sass-loader node-sass --save-dev
 </style>
 ```
 
-
-
-
-
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
